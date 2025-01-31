@@ -1,0 +1,72 @@
+.react-calendar {
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Style the navigation bar */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the arrows */
+.react-calendar__navigation button {
+  /* background: #6c47ff; Purple background for arrows */
+  color: black;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hide year navigation buttons */
+.react-calendar__navigation button[aria-label*="year"] {
+  display: none;
+}
+
+/* Remove background color from month title */
+.react-calendar__navigation span {
+  background: none !important;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+/* Weekday labels */
+.react-calendar__month-view__weekdays {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Style the calendar day tiles */
+.react-calendar__tile {
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 50%;
+  background: none !important;
+}
+
+/* Remove dots and special background */
+.react-calendar__tile--hasActive {
+  background: none !important;
+}
+
+/* Selected day style */
+.react-calendar__tile--active {
+  background: #9178fa !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+/* Remove today’s highlight */
+.react-calendar__tile--now {
+  background: rgba(185, 173, 230, 0.615) !important;
+  font-weight: normal;
+}
